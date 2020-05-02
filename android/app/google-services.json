@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "949429873755",
+    "firebase_url": "https://deazo-3d402.firebaseio.com",
+    "project_id": "deazo-3d402",
+    "storage_bucket": "deazo-3d402.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949429873755:android:c564fbd115b82d41e5637e",
+        "android_client_info": {
+          "package_name": "com.deazo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949429873755-elk9rjcbema7ethhg44ur6p094vpugr4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC6J9Og6xlRKICYz3lfyTDJduufGa1I-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949429873755-elk9rjcbema7ethhg44ur6p094vpugr4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
