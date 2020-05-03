@@ -9,12 +9,14 @@ import {
   StatusBar,
 } from 'react-native';
 import GoogleSignins from './GoogleSignins'
+//import Map from './src/Map'
 
 const App = () => {
   return(
     <View>
       <Text> moi</Text>
-      <GoogleSignins></GoogleSignins>
+    <GoogleSignins/>
+    
     </View>
   )
 }
