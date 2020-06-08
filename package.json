@@ -17,13 +17,22 @@
     "@react-navigation/native": "^5.2.3",
     "@react-navigation/stack": "^5.2.18",
     "firebase": "^7.14.2",
+    "formik": "^2.1.4",
     "react": "16.9.0",
     "react-native": "0.61.5",
+    "react-native-deck-swiper": "^1.6.7",
+    "react-native-elements": "^2.0.0",
     "react-native-gesture-handler": "^1.6.1",
+    "react-native-paper": "^3.9.0",
     "react-native-reanimated": "^1.8.0",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-screens": "^2.7.0",
-    "react-native-vector-icons": "^6.6.0"
+    "react-native-swipe-cards": "^0.1.1",
+    "react-native-swipe-carousel": "^0.1.7",
+    "react-native-vector-icons": "^6.6.0",
+    "react-native-view-overflow": "0.0.5",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
