@@ -5,24 +5,11 @@ import { connect } from 'react-redux'
 import { addActivity } from './actions/activity'
 import activityReducer from './reducers/activityReducer';
 
-
-const images = {
-    pictures: {
-        'sports': require('./components/images/tausta.jpeg'),
-        'leisure': require('./components/images/tausta.jpeg'),
-        'outdoors': require('./components/images/tausta.jpeg'),
-        'pets': require('./components/images/tausta.jpeg'),
-    }
-    
-}
-// const imagelist = images.map((pictures))
-
 class activityForm extends Component {
 
     state = {
         name:'', info:'', req:'', size:'', category: ''
       }
-      
 
     render() {
         
@@ -74,13 +61,13 @@ class activityForm extends Component {
                             <Text style={styles.categorytext}>CHOOSE A CATEGORY</Text>
                         <Picker style={styles.picker}
                             selectedValue={this.state.category}
-                            // Image source={imagelist.pictures}
                             onValueChange={(itemValue, itemIndex)=> this.setState({category:itemValue})}
                             >
-                            <Picker.Item label="Sports" value="Sports" />
-                            <Picker.Item label="Leisure" value="Leisure" />
-                            <Picker.Item label="Outdoors" value="Outdoors" />
-                            <Picker.Item label="Pets" value="Pets" />
+                            <Picker.Item label="Activities"  value  />
+                            <Picker.Item label="Leisure" value={require('./components/images/leisure.jpeg')} />
+                            <Picker.Item label="Outdoors" value={require('./components/images/outdoors.jpeg')} />
+                            <Picker.Item label="Pets" value={require('./components/images/pets.jpeg')} />
+                            <Picker.Item label="Sports" value={require('./components/images/sports.jpeg')} />
                         </Picker>
                         </View>
                         <Button title='Submit' color='maroon'

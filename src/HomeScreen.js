@@ -4,30 +4,13 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import ContentModal from './contentModal'
 
 const HomeScreen = ({navigation}) => {
-  const [modalOpen, setModalOpen] = useState(false)
+
     return(
-      <View style={{flex:1, alignItems: 'center', justifyContent:'center',}}>
-        <Modal visible={modalOpen} animationType='slide' >
-          <View style={styles.modalContent}>
-            <ContentModal />
-            <MaterialCommunityIcons
-              name='close'
-              size={24}
-              style={{...styles.modalToggle, ...styles.modalClose }}
-              onPress={() => setModalOpen(false)}
-            />
-          </View>
-        </Modal>
-        <MaterialCommunityIcons
-          name='pencil-plus'
-          size={28}
-          style={styles.modalToggle}
-          onPress={() => setModalOpen(true)}
-        /> 
+      <View style={styles.container}>
         <Text>Home Screen</Text>
         <Button
-        title="Go To Profile screen"
-        onPress={() => navigation.navigate("Profile")}
+        title="Search Group Activities"
+        onPress={() => navigation.navigate("Activity")}
         />
       </View>
     );
@@ -37,7 +20,8 @@ const HomeScreen = ({navigation}) => {
   const styles = StyleSheet.create({
     container:{
       flex: 1,
-      padding: 10
+      alignItems: 'center',
+      justifyContent:'center'
     },
     modalContent:{
       flex: 1

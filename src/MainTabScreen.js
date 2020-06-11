@@ -7,10 +7,12 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import HomeScreen from './HomeScreen'
 import ProfileScreen from './ProfileScreen'
 import DailyActivityScreen from './DailyActivityScreen'
+import MessageScreen from './MessageScreen'
 
 const HomeStack = createStackNavigator();
 const ProfileStack = createStackNavigator();
 const DailyActivityStack = createStackNavigator();
+const MessageStack = createStackNavigator();
 
 const Tab = createBottomTabNavigator();
 
@@ -53,7 +55,7 @@ const MainTabScreen = () => (
       />
       <Tab.Screen
         name="Messages"
-        component={ProfileStackScreen}
+        component={MessageStackScreen}
         options={{
           tabBarLabel: 'Messages',
           tabBarIcon: ({ color, size }) => (
@@ -111,5 +113,17 @@ const DailyActivityStackScreen = ({navigation}) => (
     </DailyActivityStack.Navigator>
     
   )
+  const MessageStackScreen = ({navigation}) => (
+    <ProfileStack.Navigator screenOptions={{
+        headerStyle: {
+          backgroundColor: '#00bfff',
+        },
+        headerTintColor: '#fff',
+        headerTitleStyle: {
+          fontWeight: 'bold'
+        },
+      }}>
+        <ProfileStack.Screen name="Message" component={MessageScreen} />
+      </ProfileStack.Navigator>
   
-
+  )
